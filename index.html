@@ -4,18 +4,179 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GINZA Shield</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #1a1a1a;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+    .tagline {
+      color: #e53935;
+      font-size: 1.2em;
+    }
+    .lang-switch {
+      margin-top: 10px;
+    }
+    .lang-switch a {
+      color: #e0f2f1;
+      text-decoration: none;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+    .lang-switch a.active {
+      text-decoration: underline;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #f3f3f3;
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .cta {
+      padding: 40px 20px;
+      background: #e0f2f1;
+    }
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #004d40;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #00695c;
+    }
+    .contact {
+      background: #f9f9f9;
+      padding: 40px 20px;
+    }
+    .contact h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #004d40;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00695c;
+    }
+    .footer {
+      background-color: #004d40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer-link {
+      display: block;
+      margin-top: 10px;
+      color: #e0f2f1;
+      text-decoration: none;
+    }
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+    .legal {
+      background-color: #f0f0f0;
+      color: #1a1a1a;
+      padding: 40px 20px;
+    }
+    .legal h2 {
+      margin-bottom: 16px;
+      font-size: 1.6em;
+    }
+    .external-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .external-link a {
+      font-weight: bold;
+      color: #004d40;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+    .external-link a:hover {
+      text-decoration: underline;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+    .button:focus, button:focus,
+    input:focus, textarea:focus {
+      outline: 3px solid #ff9800;
+      outline-offset: 2px;
+    }
+    a:focus {
+      outline: 3px solid #ff9800;
+      outline-offset: 2px;
+    }
+  </style>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
   <header>
@@ -52,9 +213,12 @@
 
     <p>Opción 1 – Vía email directo:</p>
     <form action="mailto:info@theginzaprotocol.com" method="POST" enctype="text/plain">
-      <label class="sr-only" for="name">Nombre</label><input id="name" type="text" name="name" placeholder="Tu nombre" required />
-      <label class="sr-only" for="email">Correo electrónico</label><input id="email" type="email" name="email" placeholder="Tu correo electrónico" required />
-      <label class="sr-only" for="message">Mensaje</label><textarea id="message" name="message" placeholder="Cuéntanos sobre tu herramienta de IA" required></textarea>
+      <label class="sr-only" for="name">Nombre</label>
+      <input id="name" type="text" name="name" placeholder="Tu nombre" required />
+      <label class="sr-only" for="email">Correo electrónico</label>
+      <input id="email" type="email" name="email" placeholder="Tu correo electrónico" required />
+      <label class="sr-only" for="message">Mensaje</label>
+      <textarea id="message" name="message" placeholder="Cuéntanos sobre tu herramienta de IA" required></textarea>
       <button type="submit">Enviar por correo</button>
     </form>
 
@@ -62,23 +226,15 @@
 
     <p>Opción 2 – Envío directo vía Formspree:</p>
     <form action="https://formspree.io/f/mwkgrqzv" method="POST">
-      <label class="sr-only" for="name">Nombre</label><input id="name" type="text" name="name" placeholder="Tu nombre" required />
-      <label class="sr-only" for="email">Correo electrónico</label><input id="email" type="email" name="email" placeholder="Tu correo electrónico" required />
-      <label class="sr-only" for="message">Mensaje</label><textarea id="message" name="message" placeholder="Cuéntanos sobre tu herramienta de IA" required></textarea>
+      <label class="sr-only" for="name">Nombre</label>
+      <input id="name" type="text" name="name" placeholder="Tu nombre" required />
+      <label class="sr-only" for="email">Correo electrónico</label>
+      <input id="email" type="email" name="email" placeholder="Tu correo electrónico" required />
+      <label class="sr-only" for="message">Mensaje</label>
+      <textarea id="message" name="message" placeholder="Cuéntanos sobre tu herramienta de IA" required></textarea>
       <button type="submit">Enviar online</button>
     </form>
   </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 The Ginza Protocol. Todos los derechos reservados.</p>
-    <a href="#legal" class="footer-link">Aviso Legal</a>
-  </footer>
-
-  <section id="legal" class="legal">
-    <h2>Aviso Legal</h2>
-    <p>Esta página pertenece a The Ginza Protocol. Todos los contenidos, incluyendo textos, imágenes y código, están protegidos por derechos de propiedad intelectual. El uso de esta web implica la aceptación de los términos legales aplicables.</p>
-  </section>
-
 
   <div class="external-link">
     <a href="https://zenith-landing.onrender.com/" target="_blank" rel="noopener noreferrer">
@@ -91,5 +247,9 @@
     <p>En The Ginza Protocol nos tomamos muy en serio la privacidad de tus datos. Los formularios de esta página solo recogen la información mínima necesaria para responder a tu solicitud. No compartiremos tus datos con terceros sin tu consentimiento. Para ejercer tus derechos de acceso, rectificación o supresión, puedes escribirnos a info@theginzaprotocol.com.</p>
   </section>
 
+  <footer class="footer">
+    <p>&copy; 2025 The Ginza Protocol. Todos los derechos reservados.</p>
+    <a href="#privacy" class="footer-link">Aviso Legal</a>
+  </footer>
 </body>
 </html>
