@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GINZA Shield</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       font-family: sans-serif;
@@ -20,11 +19,6 @@
       color: white;
       padding: 40px 20px;
     }
-    .logo {
-      max-width: 160px;
-      margin: 0 auto 20px;
-      display: block;
-    }
     header h1 {
       font-size: 3em;
       margin-bottom: 0.3em;
@@ -32,36 +26,6 @@
     .tagline {
       color: #e53935;
       font-size: 1.2em;
-    }
-    .lang-switch {
-      margin-top: 10px;
-    }
-    .lang-switch a {
-      color: #e0f2f1;
-      text-decoration: none;
-      margin: 0 5px;
-      font-weight: bold;
-    }
-    .lang-switch a.active {
-      text-decoration: underline;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #f3f3f3;
-      border-radius: 16px;
-      padding: 20px;
-      max-width: 300px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
     }
     .cta {
       padding: 40px 20px;
@@ -122,76 +86,79 @@
       padding: 20px;
       text-align: center;
     }
-    .footer-link {
-      display: block;
-      margin-top: 10px;
-      color: #e0f2f1;
-      text-decoration: none;
-    }
-    .footer-link:hover {
-      text-decoration: underline;
-    }
-    .legal {
-      background-color: #f0f0f0;
-      color: #1a1a1a;
+    .description {
       padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
     }
-    .external-link {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .external-link a {
-      font-weight: bold;
+    .description h2 {
+      font-size: 1.8em;
+      margin-bottom: 16px;
       color: #004d40;
-      text-decoration: none;
+    }
+    .description p {
       font-size: 1.1em;
+      line-height: 1.6em;
     }
-    .external-link a:hover {
-      text-decoration: underline;
-    }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
+    ul {
+      list-style-position: inside;
       padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
-    .button:focus, button:focus,
-    input:focus, textarea:focus {
-      outline: 3px solid #ff9800;
-      outline-offset: 2px;
-    }
-    a:focus {
-      outline: 3px solid #ff9800;
-      outline-offset: 2px;
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
     }
   </style>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
 </head>
 <body>
   <header>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAEBimNhQlgAAQGKanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAANxNqdW1iAAAAR2p1bWRjMm1hABEAEIAAAKoAOJtxA3VybjpjMnBhOjUzNDQ3YjlkLWVhZDEtNDkwMC04M2RhLWVhMmM1YmI1OGM1NAAAAAHhanVtYgAAAClqdW1kYzJhcwARABCAAACqADibcQNjMnBhLmFzc2Vy..." alt="GINZA Shield Logo" class="logo" />
     <h1>GINZA Shield</h1>
-    <p class="tagline">el escudo normativo para tu inteligencia artificial</p>
-    <nav class="lang-switch">
-      <a href="index.html" class="active">ES</a> | <a href="index-en.html">EN</a>
-    </nav>
+    <p class="tagline">El escudo normativo para tu inteligencia artificial</p>
   </header>
 
-  <section class="features">
-    <!-- contenido de tarjetas... -->
+  <section class="cta">
+    <h2>Empieza a construir IA con garantías legales</h2>
+    <p>Evalúa, documenta y mejora el cumplimiento de tu sistema de IA desde el primer momento.</p>
+    <a href="#ventajas" class="button">Ventajas de contratar el servicio</a>
   </section>
 
-  <!-- resto del contenido igual... -->
+  <section class="description">
+    <h2>¿Qué es GINZA Shield?</h2>
+    <p>
+      GINZA Shield es una herramienta de evaluación legal y ética para sistemas de inteligencia artificial. 
+      Ayuda a empresas, desarrolladores, particulares y entidades públicas a cumplir con el Reglamento Europeo de Inteligencia Artificial (AI Act) 
+      desde la fase de diseño hasta la comercialización. La herramienta realiza una clasificación automática del nivel de riesgo, 
+      sugiere medidas de mitigación, y genera un informe editable de conformidad normativa.
+    </p>
+    <p>
+      Además, proporciona orientación sobre aspectos clave como la supervisión humana, la transparencia algorítmica y la protección de derechos fundamentales. 
+      GINZA Shield es el aliado perfecto para cualquier organización que desee innovar con responsabilidad jurídica.
+    </p>
+  </section>
 
+  <section id="ventajas" class="cta">
+    <h2>Ventajas de contratar GINZA Shield</h2>
+    <ul>
+      <li>Clasificación automática del nivel de riesgo según el AI Act</li>
+      <li>Informe de cumplimiento personalizado y exportable</li>
+      <li>Recomendaciones prácticas para ajustar tu sistema de IA</li>
+      <li>Validación profesional por expertos en regulación tecnológica</li>
+      <li>Confianza jurídica frente a inversores, socios y autoridades</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Formulario de contacto</h2>
+    <form action="mailto:info@theginzaprotocol.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <textarea name="message" placeholder="Cuéntanos sobre tu herramienta de IA" required></textarea>
+      <button type="submit">Enviar por correo</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 The Ginza Protocol. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
