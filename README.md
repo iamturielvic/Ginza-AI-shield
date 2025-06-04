@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -174,6 +173,14 @@
   <header>
     <div style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
       <a href="https://zenith-landing.onrender.com/" target="_blank"
+         style="background-color: white; color: #004d40; padding: 10px 15px; border-radius: 8px;
+         font-family: 'Inter', sans-serif; text-decoration: none; font-weight: 600; font-size: 0.85em;">
+         Grupo The Ginza Protocol - Otros servicios jurídicos
+      </a>
+    </div>
+
+    <div style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+      <a href="https://zenith-landing.onrender.com/" target="_blank"
          style="background-color: #004d40; color: #004d40; padding: 10px 15px; border-radius: 8px;
          font-family: 'Inter', sans-serif; text-decoration: none; font-weight: 600; font-size: 0.85em;">
          Grupo The Ginza Protocol - Otros servicios jurídicos
@@ -245,3 +252,4 @@
   </div>
 </body>
 </html>
+
