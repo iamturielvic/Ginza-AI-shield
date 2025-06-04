@@ -19,7 +19,7 @@
 <body>
   <header>
     <h1>GINZA Shield</h1>
-    <p class="tagline">el escudo normativo para tu inteligencia artificial</p>
+    <p class="tagline">El escudo normativo para tu inteligencia artificial</p>
     <nav class="lang-switch">
       <a href="index.html" class="active">ES</a> | <a href="index-en.html">EN</a>
     </nav>
