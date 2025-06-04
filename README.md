@@ -9,7 +9,7 @@
       box-sizing: border-box;
     }
     body {
-      font-family: Verdana, Geneva, sans-serif;
+      font-family: Verdana;
       margin: 0;
       padding: 0;
       background-color: #fff;
